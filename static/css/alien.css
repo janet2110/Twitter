@@ -1,0 +1,210 @@
+html {
+           height: 100%;
+           overflow: hidden;
+         }
+
+         body {
+           background-color: #f0f9ff;
+           *zoom: 1;
+           filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF0F9FF', endColorstr='#FFA1DBFF');
+           background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiNmMGY5ZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhMWRiZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+           background-size: 100%;
+           background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #f0f9ff), color-stop(100%, #a1dbff));
+           background-image: -moz-linear-gradient(top, #f0f9ff 40%, #a1dbff 100%);
+           background-image: -webkit-linear-gradient(top, #f0f9ff 40%, #a1dbff 100%);
+           background-image: linear-gradient(to bottom, #f0f9ff 40%, #a1dbff 100%);
+           min-height: 100%;
+         }
+
+         .cloud {
+           background: url("http://ericnkatz.com/c9/pieces/c9-logo.png") no-repeat;
+           width: 159px;
+           height: 114px;
+           position: absolute;
+           top: 250px;
+           left: 250px;
+           animation: 55s cloudfloat infinite;
+         }
+         .cloud.cloud-2 {
+           transform: scale(0.5) translate(-455px, -300px);
+         }
+         .cloud.cloud-3 {
+           transform: scale(1.35) translate(-550px, -350px);
+         }
+         .cloud.cloud-4 {
+           transform: scale(0.5) translate(255px, 400px);
+         }
+         .cloud.cloud-5 {
+           transform: scale(0.9) translate(400px, 200px);
+         }
+         .cloud.cloud-6 {
+           transform: scale(0.3) translate(700px, -390px);
+         }
+         .cloud.cloud-7 {
+           transform: scale(1.7) translate(800px, -100px);
+         }
+
+         .c9 {
+           background: url("http://ericnkatz.com/c9/pieces/c9-bg.png") no-repeat;
+           width: 975px;
+           height: 686px;
+           margin: 0 auto;
+           position: relative;
+           display: block;
+           z-index: 30;
+           animation: 9.5s cloudhover infinite;
+         }
+
+         .c9-shadow {
+           display: block;
+           width: 650px;
+           height: 35px;
+           margin: 0 auto;
+           box-shadow: -35px -55px 40px rgba(0, 0, 0, 0.35);
+           position: relative;
+           top: 85px;
+           left: 5%;
+           border-radius: 50%;
+           z-index: 25;
+           animation: 9.5s cloudshadow infinite;
+         }
+
+         .c9-eye-front {
+           background: url("http://ericnkatz.com/c9/pieces/c9-eye-front.png") no-repeat;
+           width: 83px;
+           height: 39px;
+           position: absolute;
+           top: 108px;
+           left: 516px;
+           animation: 5s fronteye infinite;
+         }
+
+         .c9-eye-back {
+           background: url("http://ericnkatz.com/c9/pieces/c9-eye-back.png") no-repeat;
+           width: 22px;
+           height: 23px;
+           position: absolute;
+           top: 111px;
+           left: 490px;
+           animation: 5s backeye infinite;
+         }
+
+         .c9-mouse {
+           background: url("http://ericnkatz.com/c9/pieces/c9-mouse.png") no-repeat;
+           width: 43px;
+           height: 102px;
+           position: absolute;
+           top: 493px;
+           left: 535px;
+           animation: 5s mousestring infinite;
+         }
+
+         .c9-404 {
+           background: url("http://ericnkatz.com/c9/pieces/c9-404.png") no-repeat;
+           width: 273px;
+           height: auto;
+           position: absolute;
+           top: 450px;
+           left: 600px;
+           padding-top: 126px;
+           font-weight: bold;
+           font-size: 1.1em;
+           font-family: tahoma;
+           padding-left: 2em;
+           text-shadow: 1px 0 #fff;
+           transform: rotate(-2deg);
+         }
+
+         @keyframes mousestring {
+           0% {
+             top: 582px;
+           }
+           60% {
+             top: 493px;
+           }
+           100% {
+             top: 582px;
+           }
+         }
+         @keyframes fronteye {
+           0% {
+             transform: rotate(9deg);
+             height: 10px;
+             opacity: 0;
+           }
+           50% {
+             transform: rotate(9deg);
+             height: 45px;
+             opacity: 1;
+           }
+           100% {
+             transform: rotate(9deg);
+             height: 10px;
+             opacity: 0;
+           }
+         }
+         @keyframes backeye {
+           0% {
+             height: 2px;
+             opacity: 0;
+           }
+           50% {
+             height: 22px;
+             opacity: 1;
+           }
+           90% {
+             height: 2px;
+             opacity: 0;
+           }
+           100% {
+             height: 2px;
+             opacity: 0;
+           }
+         }
+         @keyframes cloudfloat {
+           0% {
+             top: 250px;
+             left: 250px;
+           }
+           20% {
+             left: 66%;
+             top: 66%;
+           }
+           50% {
+             left: 130%;
+             top: 80%;
+           }
+           90% {
+             left: 40%;
+             top: 95%;
+           }
+           100% {
+             top: 250px;
+             left: 250px;
+           }
+         }
+         @keyframes cloudhover {
+           0% {
+             transform: translate(0, 0) scale(0.95) rotate(2deg);
+           }
+           50% {
+             transform: translate(0, 25px) rotate(2deg);
+           }
+           100% {
+             transform: translate(0, 0) scale(0.95) rotate(2deg);
+           }
+         }
+         @keyframes cloudshadow {
+           0% {
+             transform: translate(0, 0);
+           }
+           50% {
+             transform: translate(0, -25px) scaleY(1.45) scaleX(1.05);
+             height: 25px;
+             width: 750px;
+             box-shadow: -35px -45px 15px rgba(0, 0, 0, 0.85);
+           }
+           100% {
+             transform: translate(0, 0);
+           }
+         }
